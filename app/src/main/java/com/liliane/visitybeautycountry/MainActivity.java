@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -21,11 +22,10 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
     EditText email;
     EditText password;
-    Button login;
-    TextView reset,signup;
+    Button login,signup;
+    TextView reset;
     FirebaseAuth firebaseAuth;
     ProgressDialog progressDialog;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
         email = findViewById(R.id.edt_email);
         password = findViewById(R.id.edt_reset_pass);
         login = findViewById(R.id.btn_login);
-        signup = findViewById(R.id.btn_signup);
+        signup = findViewById(R.id.btn_check);
         reset = findViewById(R.id.tv_forgot_password);
 
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),RegistrationActivity.class));
+                startActivity(new Intent(getApplicationContext(),SignupActivity.class));
             }
         });
         firebaseAuth = FirebaseAuth.getInstance();
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
         if (user != null) {
-            firebaseAuth = FirebaseAuth.getInstance();
+            //firebaseAuth = FirebaseAuth.getInstance();
             firebaseAuth.signOut();
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();

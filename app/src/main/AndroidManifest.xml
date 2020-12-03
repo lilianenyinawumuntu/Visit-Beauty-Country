@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VisityBeautyCountry">
-        <activity android:name=".userpageactivity"></activity>
+        <activity android:name=".SignupActivity"></activity>
+        <activity android:name=".userpageactivity" />
         <activity android:name=".UploadActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".PasswordActivity" />

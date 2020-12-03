@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "788739317002",
-    "project_id": "visit-beauty-country",
-    "storage_bucket": "visit-beauty-country.appspot.com"
+    "project_number": "571149826563",
+    "project_id": "visit-beauty-country-8da28",
+    "storage_bucket": "visit-beauty-country-8da28.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:788739317002:android:8b7cae7f0f4daabd262ef3",
+        "mobilesdk_app_id": "1:571149826563:android:f2cbe94385c005bbfcec36",
         "android_client_info": {
           "package_name": "com.liliane.visitybeautycountry"
         }
       },
       "oauth_client": [
         {
-          "client_id": "788739317002-5milfk7l21mep41ki84f3am98qsag0eh.apps.googleusercontent.com",
+          "client_id": "571149826563-dkdlj27e7bm9cshephv54v2u0m6avm58.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBXS_ESd0yn6RNp9spBr5sABfsQA-MPXjY"
+          "current_key": "AIzaSyCrBBEymLCsuQhTY9EXcA5NpRs36aEcv0s"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "788739317002-5milfk7l21mep41ki84f3am98qsag0eh.apps.googleusercontent.com",
+              "client_id": "571149826563-dkdlj27e7bm9cshephv54v2u0m6avm58.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

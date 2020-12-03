@@ -33,7 +33,7 @@ public class PasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password);
         email=findViewById(R.id.edit_email);
-        reset=findViewById(R.id.btn_signup);
+        reset=findViewById(R.id.btn_signup_signup);
         login=findViewById(R.id.tv_Login);
 
         firebaseAuth= FirebaseAuth.getInstance();
